@@ -1,0 +1,14 @@
+{
+  "version": 2,
+    "configurePresets": [
+        {
+            "name": "ninja",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "VCPKG_TARGET_TRIPLET": "x64-linux-dynamic",
+                "CMAKE_TOOLCHAIN_FILE": "vcpkg/scripts/buildsystems/vcpkg.cmake"
+            }
+        }
+    ]
+}
